@@ -1,0 +1,47 @@
+<!--Based on AR.js by @jerome_etienne - github: https://github.com/jeromeetienne/ar.js - info: https://medium.com/arjs/augmented-reality-in-10-lines-of-html-4e193ea9fdbf 
+ -->
+<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.5/aframe/build/aframe-ar.js"></script>
+<body style='margin : 0px; overflow: hidden;'>
+	<a-scene embedded arjs='sourceType: webcam;'>
+<a-assets>
+  <a-asset-item id="markerasset1" src="https://raw.githubusercontent.com/DreaJulca/BeyondDesktop/master/colladafiles/elements/model.dae"></a-asset-item>
+     <a-asset-item id="markerasset2" src="https://raw.githubusercontent.com/DreaJulca/BeyondDesktop/master/colladafiles/pie1/model.dae"></a-asset-item>
+     <a-asset-item id="markerasset3" src="https://raw.githubusercontent.com/DreaJulca/BeyondDesktop/master/colladafiles/graph3d/model.dae"></a-asset-item>
+     <a-asset-item id="markerasset4" src="https://raw.githubusercontent.com/DreaJulca/BeyondDesktop/master/colladafiles/airspace/model.dae"></a-asset-item>
+
+</a-assets>
+
+      <!-- use your pattern + collada model -->
+      
+		<a-marker preset='kanji' patternUrl='https://raw.githubusercontent.com/DreaJulca/BeyondDesktop/master/custom1.patt'>
+         <a-box position='0 0.5 0' material='opacity: 0.25;'></a-box>
+<a-collada-model scale=".01 0.05 .01" position="-0.25 0 0.5" src="#markerasset1" id="vis1"></a->
+      </a-marker>
+
+<a-marker preset='hiro'>
+         <a-box position='0 0.5 0' material='opacity: 0.25;'></a-box>
+<a-collada-model scale=".2 0.5 .15" position="0 0 -0.5" src="#markerasset3" id="vis2"></a->
+      </a-marker>
+
+      <!--I have found that these custom markers are not so great for multiple marker views, sadly -->
+      
+		<!--a-marker preset='pattern' patternUrl='https://raw.githubusercontent.com/DreaJulca/BeyondDesktop/master/custom1.patt'>
+         <a-box position='0 0.5 0' material='opacity: 0.25;'></a-box>
+<a-collada-model scale=".01 0.05 .01" position="-0.25 0 0.5" src="#markerasset3" id="vis2"></a->
+      </--a-marker>
+  
+		<a-marker preset='custom' url='https://raw.githubusercontent.com/DreaJulca/BeyondDesktop/master/custom3.patt'>
+         <a-box position='0 0.5 0' material='opacity: 0.25;'></a-box>
+<a-collada-model scale=".01 0.05 .01" position="-0.25 0 0.5" src="#markerasset3" id="vis3"></a->
+      </--a-marker>
+  
+		<a-marker preset='custom' url='https://raw.githubusercontent.com/DreaJulca/BeyondDesktop/master/custom4.patt'>
+         <a-box position='0 0.5 0' material='opacity: 0.25;'></a-box>
+<a-collada-model scale=".01 0.05 .01" position="-0.25 0 0.5" src="#markerasset4" id="vis4"></a->
+      </a-marker-->
+  
+		<!-- add a simple camera -->
+		<a-entity camera></a-entity>
+   </a-scene>
+</body>
