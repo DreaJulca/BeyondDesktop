@@ -1,5 +1,7 @@
 # Visualization Beyond the Desktop Exercise
 
+Repository corresponding to [codepen here](https://codepen.io/DreaBatch/pen/VxmENw)
+
 See also the following tutorials by @jerome_etienne:
 * [Basic, javascript-free intro](https://medium.com/arjs/augmented-reality-in-10-lines-of-html-4e193ea9fdbf)
 * [Multiple marker/models](https://medium.com/arjs/area-learning-with-multi-markers-in-ar-js-1ff03a2f9fbe)
