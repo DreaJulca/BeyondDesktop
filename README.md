@@ -1,6 +1,6 @@
 # Visualization Beyond the Desktop Exercise
 
-Repository corresponding to [codepen here](https://codepen.io/DreaBatch/pen/VxmENw)
+Repository corresponding to [codepen here](https://codepen.io/DreaBatch/pen/VxmENw); alternatively, you can just [view it in full browser window](https://s.codepen.io/DreaBatch/debug/VxmENw/bYMdyGxbzRxr).
 
 See also the following tutorials by @jerome_etienne:
 * [Basic, javascript-free intro](https://medium.com/arjs/augmented-reality-in-10-lines-of-html-4e193ea9fdbf)
